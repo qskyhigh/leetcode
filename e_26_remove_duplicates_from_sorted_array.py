@@ -14,12 +14,10 @@ class Solution:
                 current_index += 1
         return current_index
 
-
 @dataclass
 class TestCase:
     nums: list
     expectation: int
-
 
 class TestSolution(unittest.TestCase):
     def test_solution(self):

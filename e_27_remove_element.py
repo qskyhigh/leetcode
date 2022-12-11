@@ -15,7 +15,6 @@ from dataclasses import dataclass
 #                 index += 1
 #         return index
 
-
 # Solution 2
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
