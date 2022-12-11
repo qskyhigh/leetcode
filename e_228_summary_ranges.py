@@ -3,7 +3,6 @@ from typing import List
 import unittest
 from dataclasses import dataclass
 
-
 # 228. Summary Ranges https://leetcode.com/problems/summary-ranges/
 # Input: nums = [0,1,2,4,5,7] Output: ["0->2","4->5","7"]
 
