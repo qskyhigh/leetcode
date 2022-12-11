@@ -6,16 +6,18 @@ from dataclasses import dataclass
 
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        #max_element = len(nums) // 2
-        #for num in nums:
-            #count = sum(1 for elem in nums if num == elem)
-            #if count > max_element:
-                #return num
-
         hash_map = dict()
         for num in nums:
             hash_map[num] = hash_map.get(num, 0) + 1
         return max(hash_map.keys(), key=hash_map.get)
+
+class Solution2:
+    def majorityElement(self, nums: List[int]) -> int:
+        max_element = len(nums) // 2
+        for num in nums:
+            count = sum(1 for elem in nums if num == elem)
+            if count > max_element:
+                return num
 
 @dataclass
 class TestCase:
