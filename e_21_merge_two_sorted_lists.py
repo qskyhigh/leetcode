@@ -3,7 +3,6 @@
 from typing import List
 import unittest
 from dataclasses import dataclass
-
 from typing import List, Optional
 
 
@@ -88,4 +87,6 @@ class TestSolution(unittest.TestCase):
 
         for t in tests:
             with self.subTest(t):
-                self.assertEqual(listnode_to_list(solution.merge_two_lists(list_to_listnode(t.list1), list_to_listnode(t.list2))), t.expectation)
+                self.assertEqual(
+                    listnode_to_list(solution.merge_two_lists(list_to_listnode(t.list1), list_to_listnode(t.list2))),
+                    t.expectation)
