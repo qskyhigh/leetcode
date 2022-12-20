@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/find-smallest-letter-greater-than-target
+# https://leetcode.com/problems/plus-one
 
 from typing import List
 import unittest
@@ -16,7 +16,6 @@ class Solution:
             else:
                 digits[idx] += 1
                 return digits
-
         return [1] + digits
 
 @dataclass
